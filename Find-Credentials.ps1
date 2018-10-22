@@ -4,8 +4,8 @@
 
 # Create our lists of extensions and patterns
 # TODO: Need to develop a better list of extensions and patterns.
-$exts = @("*.txt", "*.xml", "*.conf")
-$pats = @("\d+\.","cpassword")
+$exts = @("*.txt", "*.xml", "*.conf", "*.key", "*.crt", "*.pem", "*.pfx","*.kirbi")
+$pats = @("password","pass","passwd","cpasword","\$1\$","\$2a\$","\$2y\$","\$5\$","\$6\$")
 
 # Outer FOR loop iterates through file extensions
 For ($i=0; $i -lt $exts.Length; $i++) {
